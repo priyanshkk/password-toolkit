@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -eu
+cd "$(dirname "$0")/.."
+
+if [ ! -d .venv ]; then
+    python3 -m venv .venv
+fi
+
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -r requirements-dev.txt
+
+printf 'Setup complete. Run: .venv/bin/python -m password_toolkit --help\n'

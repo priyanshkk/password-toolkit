@@ -1,0 +1,3 @@
+# Editable install plus the "dev" extra from pyproject.toml:
+# pytest, ruff, mypy and build.
+-e ".[dev]"

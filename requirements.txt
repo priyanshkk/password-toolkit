@@ -1,0 +1,4 @@
+# Runtime dependencies: none, this project uses only the Python standard library.
+# For local development, install the editable project (which includes the
+# optional dev tools) with: python -m pip install -r requirements-dev.txt
+-e .
